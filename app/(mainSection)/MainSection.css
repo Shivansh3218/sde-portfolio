@@ -1,0 +1,55 @@
+/* MainSection.css */
+
+.main-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #000;
+    color: #fff;
+    background-image: url('/public/adrien-olichon-RCAhiGJsUUE-unsplash.jpg');
+  }
+  .main-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 100vh; /* Full viewport height */
+    background-color: none;
+    color: #fff;
+    
+  }
+  .description {
+    margin-left: 2rem;
+    margin-top: 10%;
+    width: 40vw;
+    padding: 20px;
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 44px;
+  }
+  
+  .role {
+    font-size: 26px;
+    opacity: 0.8;
+    margin: 0.5rem 0;
+  }
+  
+  .short-description {
+    font-size: 17px;
+    margin-top: 20px;
+  }
+  
+  .image-container {
+ 
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  

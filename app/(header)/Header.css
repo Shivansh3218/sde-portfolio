@@ -1,0 +1,73 @@
+/* Header.css */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000000;
+  position: relative;
+  z-index: 200;
+  /* Add any other styles you need for the header */
+}
+
+.logo img {
+  width: 60px;
+  height: 50px; /* Adjust the logo size as needed */
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  width: 400px;
+  justify-content: space-around;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #7e7e7e;
+  font-weight: bold;
+}
+
+.resume-button {
+  background-color:  #000000;
+  color: #fff;
+  border: 2px solid rgb(157, 157, 157);
+  padding: 10px 30px;
+  cursor: pointer;
+  font-weight: bold;
+  /* Add any other styles for the resume button */
+}
+
+/* BEGIN: Media Queries */
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resume-button {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    width: 80px;
+  }
+
+  .nav ul {
+    gap: 10px;
+  }
+
+  .resume-button {
+    padding: 5px 10px;
+  }
+}
+
+/* END: Media Queries */
