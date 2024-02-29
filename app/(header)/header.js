@@ -22,7 +22,7 @@ const Header = () => {
       <nav className="nav">
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#certification">Certificates</a></li>
           <li><a href="#skill">Skill</a></li>
         </ul>
       </nav>

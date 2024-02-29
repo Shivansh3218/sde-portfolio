@@ -1,0 +1,26 @@
+.certification-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.certification-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 300px;
+}
+h3 {
+  font-size: x-large;
+}
+p {
+  text-align: center;
+  font-size: large;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 4rem 0;
+}
