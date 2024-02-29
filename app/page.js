@@ -9,7 +9,7 @@ function Home() {
     <div>
       <Header />
       <MainSection />
-      {/* <Skill/> */}
+      <Skill/>
       <CertificationsPage/>
     </div>
   );
