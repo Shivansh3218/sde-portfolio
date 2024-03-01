@@ -59,6 +59,7 @@
 @media (max-width: 480px) {
   .logo img {
     width: 80px;
+    height: 80px;
   }
 
   .nav ul {

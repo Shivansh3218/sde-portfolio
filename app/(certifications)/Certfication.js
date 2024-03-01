@@ -10,26 +10,22 @@ const certificationsData = [
       "Received this certification after completing the course on Advance JavaScript concepts.",
     image: "/advancejs.jpg",
   },
-  // Add more certification objects here
   {
     title: "AWS Security Plan",
     description:
       "Completed the AWS Security Plan course through AWS training and certification",
     image: "/aws-security.png",
   },
-  // Add more certification objects here
   {
     title: "CCC by Govt. Of India",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image: "/ccc.png",
   },
-  // Add more certification objects here
   {
     title: "Advanced Programming",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image: "/comp.jpg",
   },
-  // Add more certification objects here
   {
     title: "Aircampus internship",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -50,7 +46,6 @@ const certificationsData = [
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     image: "/nextjs.png",
   },
-  // Add more certification objects here
 ];
 
 const CertificationsPage = () => {
