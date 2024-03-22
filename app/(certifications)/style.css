@@ -5,6 +5,12 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
+
+#certification{
+  margin: 10rem 10rem;
+  margin-top: 15rem;
+}
 .certification-card {
   display: flex;
   justify-content: center;
@@ -23,7 +29,7 @@ p {
 h1 {
   text-align: center;
   font-size: 3rem;
-  margin: 4rem 0;
+  margin: 2rem 0;
 }
 @media (max-width: 1270px) {
   .certification-container {
