@@ -1,15 +1,16 @@
 // pages/about.js
-
+"use client"
 import Head from 'next/head';
 import './style.css'
+import useStore from '../store';
 
 export default function About() {
+
+const openContactForm =  useStore((state) => { return state?.openContactForm});
+
+
   return (
     <div className="container">
-      {/* <Head>
-        <title >About Me</title>
-        <meta name="description" content="Software Developer Portfolio" />
-      </Head> */}
 
       <main className="main">
         <h1 className="title">
@@ -36,7 +37,7 @@ export default function About() {
             <p>Discover the technologies I use.</p>
           </a>
 
-          <a href="#contact"  className="card">
+          <a onClick={openContactForm}  className="card">
             <h2>Contact →</h2>
             <p>Let's get in touch!</p>
           </a>
