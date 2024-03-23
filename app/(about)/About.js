@@ -37,10 +37,10 @@ const openContactForm =  useStore((state) => { return state?.openContactForm});
             <p>Discover the technologies I use.</p>
           </a>
 
-          <a onClick={openContactForm}  className="card">
+          <button onClick={openContactForm} style={{cursor:"pointer"}}  className="card">
             <h2>Contact →</h2>
             <p>Let's get in touch!</p>
-          </a>
+          </button>
         </div>
       </main>
     </div>

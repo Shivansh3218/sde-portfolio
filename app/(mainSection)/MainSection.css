@@ -2,12 +2,14 @@
 
 .main-section {
     display: flex;
+    padding-top:5rem;
     justify-content: space-evenly;
     align-items: center;
     height: 100vh; /* Full viewport height */
     background-color: #000;
     color: #fff;
     background-image: url('/public/adrien-olichon-RCAhiGJsUUE-unsplash.jpg');
+    margin-top:2rem ;
    
   }
   .main-section {

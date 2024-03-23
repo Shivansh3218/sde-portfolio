@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 
 const useStore = create((set) => ({
-  showContactForm: true,
+  showContactForm: false,
   openContactForm: () => set(() =>  {
     return { showContactForm: true }
   }),

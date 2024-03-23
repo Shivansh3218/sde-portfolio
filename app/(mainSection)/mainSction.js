@@ -9,7 +9,14 @@ import useStore from "../store";
 const MainSection = () => {
   const showContactForm = useStore((state) => state?.showContactForm);
   return (
-    <section className="main-section" style={showContactForm?{opacity:0.3, pointerEvents:"none"}:{opacity:1}}>
+    <section
+      className="main-section"
+      style={
+        showContactForm
+          ? { opacity: 0.3, pointerEvents: "none" }
+          : { opacity: 1 }
+      }
+    >
       <About />
       <div className="image-container">
         {/* Replace the placeholder image with your actual image */}
