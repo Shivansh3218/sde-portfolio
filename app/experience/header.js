@@ -1,7 +1,7 @@
 "use client"  
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
-import "../(header)/Header.css";
+import "../header/Header.css";
 
 const Header = () => {
   const headerRef = useRef(null);
