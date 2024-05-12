@@ -40,7 +40,7 @@ const ContactForm = (props) => {
         X
       </button>
 
-      <h1 id="heading-contact">Let's start something amazing together</h1>
+      <h1 id="heading-contact">Let&apos;s start something amazing together</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"

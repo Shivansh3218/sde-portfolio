@@ -40,7 +40,11 @@
   /* Add any other styles for the resume button */
 }
 
-/* BEGIN: Media Queries */
+.nav li a:hover {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
 
 @media (max-width: 768px) {
   .header {

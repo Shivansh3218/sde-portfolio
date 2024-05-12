@@ -1,39 +1,35 @@
-"use client";
-
-// Header.js
+"use client"  
 import Image from "next/image";
-import React from "react";
-import Link from "next/link";
-import "./Header.css"; // Import the CSS file for styling
+import React, { useEffect, useRef } from "react";
+import "./Header.css";
 
 const Header = () => {
+  const headerRef = useRef(null);
 
-  // When the user scrolls the page, execute myFunction
-window.onscroll = function() {
-  myFunction();
-};
+  useEffect(() => {
+    const header = headerRef.current;
+    const sticky = header?.offsetTop;
 
-// Get the header element
-var header = document.getElementById("myHeader");
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header?.classList.add("sticky");
+      } else {
+        header?.classList.remove("sticky");
+      }
+    }
 
-// Get the offset position of the header
-var sticky = header?.offsetTop;
+    window.onscroll = myFunction;
 
-// Add the "sticky" class to the header when it reaches its scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-      header?.classList.add("sticky");
-  } else {
-      header?.classList.remove("sticky");
-  }
-}
+    // Cleanup function to remove the event listener
+    return () => {
+      window.onscroll = null;
+    };
+  }, []);
 
   return (
-    <header className="header" id="myHeader">
+    <header className="header" id="myHeader" ref={headerRef}>
       <div className="logo">
-        {/* Your logo image or text goes here */}
         <Image
-          //   className={styles.logo}
           src="/profile.jpg"
           alt="Next.js Logo"
           width={50}
@@ -44,23 +40,30 @@ function myFunction() {
       <nav className="nav">
         <ul>
           <li>
-            <a href=".main-section"
-                     onClick={(e) => {
-                      e.preventDefault();
-                      document
-                        .querySelector(".main-section")
-                        .scrollIntoView({ behavior: "smooth" });
-                    }}>Home</a>
+            <a
+              href=".main-section"
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .querySelector(".main-section")
+                  .scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Home
+            </a>
           </li>
           <li>
-            <a href="#certification"
-             onClick={(e) => {
-              e.preventDefault();
-              document
-                .querySelector("#certification")
-                .scrollIntoView({ behavior: "smooth" });
-            }}
-            >Certificates</a>
+            <a
+              href="#certification"
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .querySelector("#certification")
+                  .scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Certificates
+            </a>
           </li>
           <li>
             <a
@@ -77,7 +80,9 @@ function myFunction() {
           </li>
         </ul>
       </nav>
-      <button className="resume-button">Resume</button>
+      <a href="/resume.pdf" download>
+        <button className="resume-button">Resume</button>
+      </a>
     </header>
   );
 };

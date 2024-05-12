@@ -1,20 +1,23 @@
 .form-container {
   background-color: rgb(0, 0, 0);
-  padding: 2rem;
+  padding: 1rem;
   color: white;
   max-width: 50vw;
-  margin: auto;
+  margin: 0 auto;
   display: none;
   border-radius: 10%;
   position: absolute;
-  left: 30%;
-  z-index: 20;
+  top: 10%;
+  left: 27%;
+  z-index: 200;
   transition: 2s;
 }
 #heading-contact, input {
   background-color: rgb(0, 0, 0);
 }
-
+#heading-contact{
+  font-size: 2.3rem;
+}
 form {
   display: flex;
   flex-direction: column;
@@ -44,7 +47,7 @@ input[type="checkbox"] {
 }
 
 .button {
-  background-color: #000000; /* Green */
+  background-color: #108700; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -54,17 +57,21 @@ input[type="checkbox"] {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  border-radius: 20px;
 }
 
 .button:hover {
-  background-color: #464646;
+  background-color: #414141;
 }
 .close-btn {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(107, 7, 7);
   border: 1px solid white;
-  border-radius: 2rem;
+  border-radius: 10%;
+  position: relative;
+  left: 80%;
 }
 .close-btn :hover {
-  background-color: red;
+  background-color: rgb(255, 31, 31);
   color: black;
+
 }
