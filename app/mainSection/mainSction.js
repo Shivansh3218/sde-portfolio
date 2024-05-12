@@ -3,7 +3,7 @@
 import React from "react";
 import "./MainSection.css"; // Import the CSS file for styling
 import Image from "next/image";
-import About from "../about/about";
+import About from "../about/About";
 import useStore from "../store";
 
 const MainSection = () => {
