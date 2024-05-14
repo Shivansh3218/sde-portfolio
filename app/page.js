@@ -7,6 +7,7 @@ import Skill from "./skills/skills";
 import CertificationsPage from "./certifications/Certfication";
 import About from "./about/About";
 import ContactForm from "./contact/ContactForm";
+import Footer from "./footer/Footer";
 
 function Home() {
   return (
@@ -18,6 +19,8 @@ function Home() {
       <MainSection />
       <Skill/>
       <CertificationsPage/>
+      
+     
     </div>
   );
 }

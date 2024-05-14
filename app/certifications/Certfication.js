@@ -3,47 +3,48 @@
 import React from "react";
 import CertificationCard from "./CertificationCard";
 import './style.css'
+import Footer from "../footer/Footer";
 const certificationsData = [
   {
     title: "Advance JavaScript",
     description:
-      "Received this certification after completing the course on Advance JavaScript concepts.",
+      "Mastered advanced JavaScript concepts through comprehensive training.",
     image: "/advancejs.jpg",
   },
   {
     title: "AWS Security Plan",
     description:
-      "Completed the AWS Security Plan course through AWS training and certification",
+      "Successfully completed the AWS Security Plan course offered by AWS training and certification.",
     image: "/aws-security.png",
   },
   {
     title: "CCC by Govt. Of India",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Certified by the Government of India in Computer Concepts.",
     image: "/ccc.png",
   },
   {
     title: "Advanced Programming",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Excelled in advanced programming techniques and methodologies.",
     image: "/comp.jpg",
   },
   {
     title: "Aircampus internship",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Completed an internship program at Aircampus.",
     image: "/AirCampus Internship Certificate.png",
   },
   {
     title: "TypeScript Certification",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Achieved certification in TypeScript programming language.",
     image: "/ts.png",
   },
   {
-    title: " Node.js and Express ",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Node.js and Express",
+    description: "Proficient in building web applications using Node.js and Express.",
     image: "/node.png",
   },
   {
-    title: "Next JS project ",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Next JS project",
+    description: "Developed a project using Next.js for enhanced web application performance.",
     image: "/nextjs.png",
   },
 ];
@@ -55,6 +56,7 @@ const CertificationsPage = () => {
         Certifications
       </h1>
       <CertificationCard certifications={certificationsData} />
+      <Footer/>
     </div>
   );
 };
