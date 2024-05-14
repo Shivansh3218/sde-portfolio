@@ -41,7 +41,7 @@ const ContactForm = (props) => {
       </button>
 
       <h1 id="heading-contact">Let&apos;s start something amazing together</h1>
-      <form onSubmit={handleSubmit}>
+      <form >
         <input
           type="text"
           name="name"
@@ -69,7 +69,8 @@ const ContactForm = (props) => {
           value={formData.projectDetails}
           onChange={handleInputChange}
         />
-        <button className="button" type="submit">Submit</button>
+        <a href="mailto:shivanshrawat587@gmail.com">
+        <button className="button" target="_blank">Submit</button></a>
       </form>
     </div>
   );

@@ -34,15 +34,16 @@ export default function About() {
             <h2>Skills →</h2>
             <p>Discover the technologies I use.</p>
           </a>
-
+          <a href="mailto:shivanshrawat587@gmail.com">
           <button
-            onClick={openContactForm}
+            // onClick={openContactForm}
             style={{ cursor: "pointer" }}
             className="card"
           >
             <h2>Contact →</h2>
-            <p>Let&apos;s get in touch!</p>
+            <p>Let&apos;s get in touch! Connect With me today. </p>
           </button>
+          </a>
         </div>
       </main>
     </div>
